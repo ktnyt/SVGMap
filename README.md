@@ -19,6 +19,22 @@ Using SVGMap is simple.
 <script type="text/javascript" src="../SVGMap.js"></script>
 <script type="text/javascript">
 var map = new SVGMap(selector, filepath);
+var marker = new SVGMap.Marker( {
+    map: map,
+    position: { x: x, y: y },
+    icon: 'pin.png',
+    offset: { x: 7, y: 35 },
+    anchorPoint: { x: 0, y: 39 }
+} );
+
+var infoWindow = new SVGMap.InfoWindow( {
+    position: { x: x, y: y },
+    content: 'Hello, map!'
+} );
+
+marker.container.onclick = function() {
+    infoWindow.open( map, marker );
+};
 </script>
 ```
 
