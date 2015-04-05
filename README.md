@@ -40,7 +40,7 @@ var layer = map.addSVGLayer(new G.SVGLayer("other_image", 0.5, 2.0, {
     w: 2048,
     h: 1152
 }));
-var layer2 = map.addSVGLayer(new G.SVGLayer("another_image, 2.0, 4.0, {
+var layer2 = map.addSVGLayer(new G.SVGLayer("another_image", 2.0, 4.0, {
     x: 0,
     y: 0,
     w: 1152,
